@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+<!-- Animation for the sidebar -->
+<style>
+    @keyframes slideOutLeft {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+</style>
+
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="closeSidebar()">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<div class="w3-overlay" onclick="closeSidebar()" style="cursor:pointer;display:none;" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:200px">
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>My Page</h1>
+  </div>
+</div>
+
+<div class="w3-container">
+  <h3>Responsive Sidebar</h3>
+  <p>The sidebar in this example will always be displayed on screens wider than 992px, and hidden on tablets or mobile phones (screens less than 993px wide).</p>
+  <p>On tablets and mobile phones the sidebar is replaced with a menu icon to open the sidebar.</p>
+  <p>The sidebar will overlay of the page content.</p>
+  <p><b>Resize the browser window to see how it works.</b></p>
+</div>
+   
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+<script>
+    function openSidebar() {
+        var sidebar = document.getElementById("mySidebar");
+        var overlay = document.getElementById("myOverlay");
+        sidebar.style.animation = "slideInRight 0.3s ease";
+        sidebar.style.display = "block";
+    }
+
+    function closeSidebar() {
+        var sidebar = document.getElementById("mySidebar");
+        var overlay = document.getElementById("myOverlay");
+        sidebar.style.animation = "slideOutLeft 0.3s ease";
+        overlay.style.display = "none";
+        setTimeout(function () {
+            sidebar.style.display = "none";
+            sidebar.style.animation = "";
+        }, 300);
+    }
+</script>
+     
+</body>
+</html>
