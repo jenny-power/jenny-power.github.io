@@ -14,6 +14,10 @@
 .w3-theme-r,.w3-hover-theme-r:hover{color:#000 !important; background-color:#ff6663 !important}
 
 .w3-hover-text-theme-r:hover {color:#ff6663 !important}
+
+p {
+    font-size: 16px;
+  }
   
 
 
