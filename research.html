@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jenny Power Research</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e9dd2cd32d.js" crossorigin="anonymous"></script>
+  
+    <style>
+      <!-- Colours-->
+      .w3-theme {color:#000 !important; background-color:#ffa6c9 !important}
+
+      .w3-newblack {color:#fff !important; background-color: #1B1B1B !important}
+
+      .w3-text-theme {color:#ffa6c9 !important}
+      .w3-border-theme {border-color:#ffa6c9 !important}
+      .w3-hover-theme:hover {color:#000 !important; background-color:#ffa6c9 !important}
+      .w3-hover-text-theme:hover {color:#ffa6c9 !important}
+      .w3-hover-border-theme:hover {border-color:#ffa6c9 !important}
+      .w3-theme-o,.w3-hover-theme-blank:hover{color:#000 !important; background-color:#000 !important}
+      .w3-theme-o,.w3-hover-theme-o:hover{color:#000 !important; background-color:#ffb86b !important}
+      .w3-theme-y,.w3-hover-theme-y:hover{color:#000 !important; background-color:#fdfd97 !important}
+      .w3-theme-g,.w3-hover-theme-g:hover{color:#000 !important; background-color:#9ee09e !important}
+      .w3-theme-b,.w3-hover-theme-b:hover{color:#000 !important; background-color:#9ee7f5 !important}
+      .w3-theme-v,.w3-hover-theme-v:hover{color:#000 !important; background-color:#ecbdff !important}
+      .w3-theme-r,.w3-hover-theme-r:hover{color:#000 !important; background-color:#ff6663 !important}
+
+      a:link {
+        text-decoration: none;
+      }
+    </style>
+    
+</head>
+    
+
+<body>
+<!--Sidebar-->
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left w3-newblack" style="width:250px;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-xlarge w3-hide-large w3-hover-theme" onclick="closeSidebar()">&times;</button>
+  <h1 class="w3-bar-item w3-monospace w3-xlarge w3-padding-large w3-center w3-text-theme"><b>Jenny Power</b></h1>
+  <div class="w3-display-container w3-center">
+    <img src="/images/logo.png" style="width:20%">
+  </div>
+  <hr>
+  <a href="#jenny-power.github.io" class="w3-bar-item w3-button w3-hover-theme-r w3-monospace w3-large w3-padding-large">Home</a>
+  <a href="research.html" class="w3-bar-item w3-button w3-hover-theme-o w3-monospace w3-large w3-padding-large">Research</a>
+  <a href="CV.html" class="w3-bar-item w3-button w3-hover-theme-y w3-monospace w3-large w3-padding-large">CV</a>
+  <a href="#scicomm.html" class="w3-bar-item w3-button w3-hover-theme-g w3-monospace w3-large w3-padding-large">Sci-comm and Outreach</a>
+  <a href="#blogs.html" class="w3-bar-item w3-button w3-hover-theme-b w3-monospace w3-large w3-padding-large">Blogs</a>
+
+  <hr>
+  <br> <br>
+  <h3 class="w3-bar-item w3-monospace">Contact Me</h3>
+  <a class="w3-bar-item w3-button w3-hover-theme-r   w3-padding-large" href="mailto:jip30@bath.ac.uk"><i class="fa fa-fw fa-envelope"></i> Email</a>
+  <a class="w3-bar-item w3-button w3-hover-theme-o  w3-padding-large" href="https://www.instagram.com/thejennypowerhour/"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+  <a class="w3-bar-item w3-button w3-hover-theme-y  w3-padding-large" href="https://twitter.com/jennypower13"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+  <a class="w3-bar-item w3-button w3-hover-theme-g  w3-padding-large" href="https://www.linkedin.com/in/jennifer-power-816b07149/"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+  <a class="w3-bar-item w3-button w3-hover-theme-b w3-padding-large" href="https://github.com/jip30"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+  <a class="w3-bar-item w3-button w3-hover-theme-v w3-padding-large" href="https://orcid.org/0000-0002-0951-3852"><i class="fa-brands fa-orcid"></i> ORCID</a>
+</div>
+
+<div class="w3-overlay" onclick="closeSidebar()" style="cursor:pointer;display:none;" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px">
+<div class="w3-theme">
+  <button class="w3-button w3-theme w3-xlarge w3-hide-large w3-hover-theme-o" onclick="w3_open()">&#9776;</button>
+</div>
+
+
+<!-- End Right Column -->
+</div>
+
+<footer class="w3-container w3-center w3-margin-top">
+  <p>&copy; Jenny Power 2023, Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+<script>
+    function openSidebar() {
+        var sidebar = document.getElementById("mySidebar");
+        var overlay = document.getElementById("myOverlay");
+        sidebar.style.animation = "slideInRight 0.3s ease";
+        sidebar.style.display = "block";
+    }
+
+    function closeSidebar() {
+        var sidebar = document.getElementById("mySidebar");
+        var overlay = document.getElementById("myOverlay");
+        sidebar.style.animation = "slideOutLeft 0.3s ease";
+        overlay.style.display = "none";
+        setTimeout(function () {
+            sidebar.style.display = "none";
+            sidebar.style.animation = "";
+        }, 300);
+    }
+</script>
+     
+</body>
+</html>
