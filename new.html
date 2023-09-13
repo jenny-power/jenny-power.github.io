@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jenny Power</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e9dd2cd32d.js" crossorigin="anonymous"></script>
+  
+    <style>
+      <!-- Colours-->
+      .w3-theme {color:#000 !important; background-color:#ffa6c9 !important}
+
+      .w3-newblack {color:#fff !important; background-color: #1B1B1B !important}
+
+      .w3-text-theme {color:#ffa6c9 !important}
+      .w3-border-theme {border-color:#ffa6c9 !important}
+      .w3-hover-theme:hover {color:#000 !important; background-color:#ffa6c9 !important}
+      .w3-hover-text-theme:hover {color:#ffa6c9 !important}
+      .w3-hover-border-theme:hover {border-color:#ffa6c9 !important}
+      .w3-theme-o,.w3-hover-theme-blank:hover{color:#000 !important; background-color:#000 !important}
+      .w3-theme-o,.w3-hover-theme-o:hover{color:#000 !important; background-color:#ffb86b !important}
+      .w3-theme-y,.w3-hover-theme-y:hover{color:#000 !important; background-color:#fdfd97 !important}
+      .w3-theme-g,.w3-hover-theme-g:hover{color:#000 !important; background-color:#9ee09e !important}
+      .w3-theme-b,.w3-hover-theme-b:hover{color:#000 !important; background-color:#9ee7f5 !important}
+      .w3-theme-v,.w3-hover-theme-v:hover{color:#000 !important; background-color:#ecbdff !important}
+      .w3-theme-r,.w3-hover-theme-r:hover{color:#000 !important; background-color:#ff6663 !important}
+
+      .w3-theme-r-pale {color:#000 !important; background-color:#FFB3B1 !important}
+      .w3-theme-o-pale {color:#000 !important; background-color:#FFDCB5 !important}
+      .w3-theme-y-pale {color:#000 !important; background-color:#FEFECB !important}
+      .w3-theme-g-pale {color:#000 !important; background-color:#CFF0CF !important}
+      .w3-theme-b-pale {color:#000 !important; background-color:#CFF3FA !important}
+      .w3-theme-v-pale {color:#000 !important; background-color:#F6DEFF !important}
+
+
+
+      
+
+      a:link {
+        text-decoration: none;
+      }
+    </style>    
+</head>
+    
+
+
+
+
+
+<body>
+<!--Sidebar-->
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left w3-newblack" style="width:250px;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-xlarge w3-hide-large w3-hover-theme" onclick="closeSidebar()">&times;</button>
+  <h1 class="w3-bar-item w3-monospace w3-xlarge w3-padding-large w3-center w3-text-theme"><b>Jenny Power</b></h1>
+  <div class="w3-display-container w3-center">
+    <img src="/images/logo.png" style="width:20%">
+  </div>
+  <hr>
+  <a href="jenny-power.github.io" class="w3-bar-item w3-button w3-hover-theme-r w3-monospace w3-large w3-padding-large">Home</a>
+  <a href="research.html" class="w3-bar-item w3-button w3-hover-theme-o w3-monospace w3-large w3-padding-large">Research</a>
+  <a href="CV.html" class="w3-bar-item w3-button w3-hover-theme-y w3-monospace w3-large w3-padding-large">CV</a>
+  <a href="scicomm.html" class="w3-bar-item w3-button w3-hover-theme-g w3-monospace w3-large w3-padding-large">Sci-comm and Outreach</a>
+  <a href="blogs.html" class="w3-bar-item w3-button w3-hover-theme-b w3-monospace w3-large w3-padding-large">Blogs</a>
+  <hr>
+  <br> <br>
+  <h3 class="w3-bar-item w3-monospace">Contact Me</h3>
+  <a class="w3-bar-item w3-button w3-hover-theme-r   w3-padding-large" href="mailto:jip30@bath.ac.uk"><i class="fa fa-fw fa-envelope"></i> Email</a>
+  <a class="w3-bar-item w3-button w3-hover-theme-o  w3-padding-large" href="https://www.instagram.com/thejennypowerhour/"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+  <a class="w3-bar-item w3-button w3-hover-theme-y  w3-padding-large" href="https://twitter.com/jennypower13"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+  <a class="w3-bar-item w3-button w3-hover-theme-g  w3-padding-large" href="https://www.linkedin.com/in/jennifer-power-816b07149/"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+  <a class="w3-bar-item w3-button w3-hover-theme-b w3-padding-large" href="https://github.com/jip30"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+  <a class="w3-bar-item w3-button w3-hover-theme-v w3-padding-large" href="https://orcid.org/0000-0002-0951-3852"><i class="fa-brands fa-orcid"></i> ORCID</a>
+</div>
+
+<div class="w3-overlay" onclick="closeSidebar()" style="cursor:pointer;display:none;" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px">
+    <div class="w3-theme">
+      <button class="w3-button w3-theme w3-xlarge w3-hide-large w3-hover-theme-o" onclick="w3_open()">&#9776;</button>
+    </div>
+    
+    <!-- Research Summary -->
+    
+    <div class="w3-container w3-content  w3-padding-16" style="max-width:1600px">
+        <div class="w3-container w3-content w3-theme w3-round" style="max-width:800px">
+            <h2 class="w3-monospace w3-center"><b>Science Communication and Outreach</b></h2>
+        </div>
+        <div class="w3-container w3-content w3-round">
+            <p class = "main w3-justify">Here you'll find all my science communication and outreach work! I've had the joy of talking about maths to a wide range of audiences, from primary school children all the way to members of parliament. </p>
+        </div>
+    </div>
+        
+        <div class="w3-container w3-theme-o-pale">
+            <h2 class="w3-monospace"><b>Intersections Podcast - Guest</b></h2>
+            <div class="w3-half">
+                <p class = "main w3-justify">I was a guest on the first episode of the Academy of Mathematical Sciences new podcast series - Intersections. In this episode I was joined by my fellow STEM for Britain medalists, where we spoke about the competition and our experience of showcasing their work to MPs. We also discussed the importance of having decision-makers interested in mathematical sciences research, the benefits of knowledge exchange, and the importance of maths communication. You can check in out <a href="https://www.acadmathsci.org.uk/home/intersections-podcast-series/"><span><b>here</b></span></a></p>
+            </div>
+            <div class="w3-half">
+                <embed type="text/html" src="https://www.acadmathsci.org.uk/home/intersections-podcast-series/"  width="500" height="250">
+              </div>
+          </div>
+          <div class="w3-container w3-theme-y-pale w3-padding-16">
+            <div class="w3-left"><p>I was a guest on the first episode of the Academy of Mathematical Sciences new podcast series - Intersections. In this episode I was joined by my fellow STEM for Britain medalists, where we spoke about the competition and our experience of showcasing their work to MPs. We also discussed the importance of having decision-makers interested in mathematical sciences research, the benefits of knowledge exchange, and the importance of maths communication. You can check in out <a href="https://www.acadmathsci.org.uk/home/intersections-podcast-series/"><span>here</span></a></p></div>
+            <div class="w3-right">
+              <h3>52</h3>
+            </div>
+            <div class="w3-clear"></div>
+            <h4>Messages</h4>
+          </div>
+        <h2 class="w3-monospace w3-center"><b>My Research</b></h2>
+        <p class = "main w3-justify">My research focuses on "Mathematical modelling of radiotherapy cancer treatments". In particular, my work focuses on brachytherapy, a type of radiation treatment consisting of placing sealed, radioactive sources directly onto the tumour to be treated.
+          Brachytherapy is most commonly used to treat cervical and prostate cancer.
+          It has proven to be an efficient form of treatment as the radiation dose delivered can be focused on the tumour, and can be quite high, while limiting dose exposure of the surrounding normal tissue. 
+          However, a disadvantage of brachytherapy occurs when the tumour is close to a critical organ. 
+          In this instance, the radiation emitted from the sources may damage these critical organs, which could cause further health problems and complications. 
+          A challenge lies in positioning the sources such that the tumour is exposed to the required amount of radiation to kill it, but the critical organ is not exposed to excessive toxicity. 
+          This is what my research focuses on.</p>
+        <p class = "main">The aim of my work is to develop a numerical model which will determine the optimal placements of these radioactive sources such that the damage to the critical organs and surrounding tissue is minimal, but the dose on the tumour is still high enough to eradicate it. 
+          This problem is formulated as a PDE constrained optimisation problem. The main mathematical areas this project spans are partial differential equations (PDEs), inverse problems and PDE constrained optimisation, and the finite element method.
+        </p>
+        <p class = "main">
+        My hope is that in the future a sophisticated model could be created from this work which would aid clinicians in treatment planning. This would allow clinicians to create personalised treatment plans for patiexnts based on their own medical scans, which are mathematically proven to be the most efficacious.
+        </p>  
+      </div> 
+      <hr>
+      <!-- STEM for Britain Poster -->
+      <div class="w3-container w3-content w3-padding-64" style="max-width:1200px" id="STEMB">
+        <h2 class="w3-monospace w3-center"><b>STEM for Britain Poster - March 2023</b></h2>
+        <p class = "main w3-justify">I was fortunate to be selected as a finalist for STEM for Britain, where I was awarded the oppurtunity to present my research poster in parliament. Here is said poster, which I placed second in the mathematics category with. 
+      </p>
+      </div>
+        
+      <!-- Poster Image -->
+      <div class="mySlides w3-display-container w3-center">
+        <img src="/images/STEMforBritain.png"style="max-width:1200px">
+      </div>
+      
+      <div class="w3-container w3-content w3-left-align w3-padding-64" style="max-width:1200px">
+        <h3 class="w3-monospace"><b>References</b></h3>
+        <p>[1] Arridge, S. R., et al. "A finite element approach for modeling photon transport in tissue." Medical physics 20.2 (1993): 299-309. <br>
+          [2] Antil, Harbir, et al., eds. Frontiers in PDE-constrained Optimization. Vol. 163. Springer, 2018. <br>
+          [3] Nath, R., et al. "AAPM Technical Report 51: Dosimetry of Interstitial Brachytherapy Sources: Recommendations of the AAPM Radiation Therapy Committee Task Group No. 43." Med. Phys 22 (1995): 209-34. <br>
+          [4] Manzoni, et al. "Optimal Control of Partial Differential Equations." Springer, 2021. <br>
+          [5] Wang, Lihong V., and Hsin-I. Wu. Biomedical optics: principles and imaging. John Wiley & Sons, 2012.
+        </p>
+      </div>
+      
+    
+      <!-- End Page Content -->
+      </div>
+
